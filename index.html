@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Charset and Viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Core SEO Meta Tags -->
+    <title>Free Online Image Resizer Pro - Resize & Edit Images Instantly</title>
+    <meta name="description" content="Resize images online for free with Image Resizer Pro. Change dimensions, adjust resolution, convert aspect ratios. Supports JPG, PNG, WebP. No login or registration required. Fast, secure, and easy to use.">
+    <meta name="keywords" content="image resizer, resize image, online image editor, change image size, image dimension converter, aspect ratio calculator, free image tool, resize photos, image compression, resolution converter, batch resize, image cropper">
+    <meta name="author" content="Image Resizer Pro">
+    <meta name="creator" content="Image Resizer Pro">
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- Robots and Crawling -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Language and Locale -->
+    <meta http-equiv="content-language" content="en-us">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="">
+    
+    <!-- Alternate Links for Mobile -->
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Online Image Resizer - Resize & Edit Images Instantly">
+    <meta property="og:description" content="Resize images online for free. Change dimensions, adjust resolution, convert aspect ratios. No login required. Supports JPG, PNG, WebP formats.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/6366f1/ffffff?text=Free+Image+Resizer+Tool">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="Image Resizer Pro">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ImageResizerPro">
+    <meta name="twitter:title" content="Free Online Image Resizer - Resize & Edit Images Instantly">
+    <meta name="twitter:description" content="Resize images online for free. Change dimensions, adjust resolution, convert aspect ratios. No login required.">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630/6366f1/ffffff?text=Free+Image+Resizer+Tool">
+    
+    <!-- Additional SEO Tags -->
+    <meta name="rating" content="general">
+    <meta name="revisit-after" content="7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Image Resizer Pro">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖼️</text></svg>">
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖼️</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖼️</text></svg>">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Image Resizer Pro",
+        "description": "Free online image resizer tool to resize, compress and edit images instantly",
+        "url": "",
+        "applicationCategory": "Utility",
+        "operatingSystem": "Web",
+        "browserRequirements": "Requires a modern web browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "Image Resizer Pro"
+        }
+    }
+    </script>
+    
+    <!-- Additional Structured Data for Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I resize an image online?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Upload your image, enter the desired width and height, select aspect ratio if needed, and download the resized image instantly."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Image Resizer Pro free to use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Image Resizer Pro is completely free to use. No login, registration, or payment required."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What image formats are supported?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Image Resizer Pro supports JPG, PNG, and WebP formats for both upload and download."
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        
+        .drop-zone {
+            border: 3px dashed #a5b4fc;
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+        }
+        
+        .drop-zone:hover, .drop-zone.dragover {
+            border-color: #6366f1;
+            background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+            transform: scale(1.01);
+        }
+        
+        .drop-zone.dragover {
+            box-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+        }
+        
+        input[type="range"] {
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            border-radius: 4px;
+            background: linear-gradient(to right, #6366f1, #a855f7);
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid #6366f1;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.1);
+        }
+        
+        .preview-container {
+            background: repeating-conic-gradient(#f3f4f6 0% 25%, white 0% 50%) 50% / 20px 20px;
+            border-radius: 12px;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+        }
+        
+        .btn-success {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-success:hover {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+        }
+        
+        .input-field {
+            transition: all 0.3s ease;
+        }
+        
+        .input-field:focus {
+            transform: scale(1.02);
+        }
+        
+        .ratio-btn, .scale-btn, .format-btn {
+            transition: all 0.2s ease;
+        }
+        
+        .ratio-btn:hover, .scale-btn:hover, .format-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .ratio-btn.active, .format-btn.active {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            color: white;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+        
+        .comparison-slider {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .comparison-slider::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 3px;
+            background: white;
+            z-index: 10;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .live-preview-badge {
+            background: linear-gradient(135deg, #10b981, #059669);
+            animation: pulse 1.5s infinite;
+        }
+        
+        .info-card {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid #f59e0b;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100 min-h-screen">
+    
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md shadow-lg border-b border-indigo-100 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent flex items-center gap-3">
+                    <span class="text-4xl">🖼️</span> 
+                    <span>Image Resizer Pro</span>
+                </h1>
+                <div class="flex items-center gap-3">
+                    <span class="hidden sm:inline-flex bg-gradient-to-r from-green-400 to-emerald-500 text-white px-4 py-1.5 rounded-full text-sm font-semibold shadow-lg">
+                        ✨ 100% Free
+                    </span>
+                    <span class="bg-indigo-100 text-indigo-700 px-4 py-1.5 rounded-full text-sm font-semibold">
+                        🔓 No Login
+                    </span>
+                </div>
+            </div>
+            <p class="text-gray-600 mt-2 text-sm md:text-base">Resize images, change dimensions & aspect ratio instantly - All processing happens locally</p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        
+        <!-- Upload Section -->
+        <section id="uploadSection" class="mb-8 fade-in">
+            <div id="dropZone" class="drop-zone rounded-3xl p-8 md:p-16 text-center cursor-pointer shadow-2xl">
+                <div class="flex flex-col items-center">
+                    <div class="text-8xl mb-6 pulse-animation">📤</div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-3">Drop your image here</h2>
+                    <p class="text-gray-600 mb-6 text-lg">or click anywhere to browse files</p>
+                    <div class="flex flex-wrap justify-center gap-3 mb-6">
+                        <span class="bg-white/80 px-4 py-2 rounded-full text-sm font-medium text-gray-700 shadow">📷 JPG</span>
+                        <span class="bg-white/80 px-4 py-2 rounded-full text-sm font-medium text-gray-700 shadow">🖼️ PNG</span>
+                        <span class="bg-white/80 px-4 py-2 rounded-full text-sm font-medium text-gray-700 shadow">🌐 WebP</span>
+                        <span class="bg-white/80 px-4 py-2 rounded-full text-sm font-medium text-gray-700 shadow">🎞️ GIF</span>
+                    </div>
+                    <div class="bg-white/60 rounded-2xl px-6 py-3 text-sm text-gray-600">
+                        <span class="font-semibold">💡 Tip:</span> Your images are processed locally and never uploaded to any server
+                    </div>
+                    <input type="file" id="fileInput" accept="image/*" class="hidden">
+                </div>
+            </div>
+        </section>
+
+        <!-- Editor Section (Hidden initially) -->
+        <section id="editorSection" class="hidden fade-in">
+            
+            <!-- Live Preview Banner -->
+            <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-2xl p-4 mb-6 flex items-center justify-between shadow-xl">
+                <div class="flex items-center gap-3">
+                    <span class="live-preview-badge px-3 py-1 rounded-full text-sm font-bold">● LIVE</span>
+                    <span class="font-semibold">Preview updates in real-time as you adjust settings</span>
+                </div>
+                <button onclick="resetEditor()" class="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg font-medium transition">
+                    📁 New Image
+                </button>
+            </div>
+            
+            <div class="grid lg:grid-cols-5 gap-6">
+                
+                <!-- Preview Panel - Takes more space -->
+                <div class="lg:col-span-3 glass-card rounded-3xl shadow-2xl p-6 order-2 lg:order-1">
+                    <div class="flex items-center justify-between mb-4">
+                        <h2 class="text-xl font-bold text-gray-800 flex items-center gap-2">
+                            <span class="text-2xl">👁️</span> Live Preview
+                        </h2>
+                        <div class="flex gap-2">
+                            <button id="showOriginalBtn" onclick="togglePreview('original')" class="px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-lg text-sm font-medium transition">Original</button>
+                            <button id="showResizedBtn" onclick="togglePreview('resized')" class="px-3 py-1.5 bg-indigo-100 text-indigo-700 rounded-lg text-sm font-medium transition">Resized</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Preview Container -->
+                    <div class="preview-container p-4 min-h-[350px] md:min-h-[450px] flex items-center justify-center relative overflow-hidden">
+                        <img id="previewImage" src="" alt="Preview" class="max-w-full max-h-[420px] object-contain rounded-lg shadow-xl transition-all duration-300">
+                        
+                        <!-- Dimension Overlay -->
+                        <div id="dimensionOverlay" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/70 text-white px-4 py-2 rounded-full text-sm font-medium backdrop-blur-sm">
+                            <span id="overlayDimensions">-- × -- px</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Image Stats -->
+                    <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-3 text-center">
+                            <p class="text-xs text-blue-600 font-medium mb-1">Original Size</p>
+                            <p id="originalSize" class="text-sm font-bold text-blue-800">-- × --</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-3 text-center">
+                            <p class="text-xs text-purple-600 font-medium mb-1">New Size</p>
+                            <p id="newDimensions" class="text-sm font-bold text-purple-800">-- × --</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-3 text-center">
+                            <p class="text-xs text-green-600 font-medium mb-1">File Size</p>
+                            <p id="fileSize" class="text-sm font-bold text-green-800">--</p>
+                        </div>
+                        <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-3 text-center">
+                            <p class="text-xs text-orange-600 font-medium mb-1">Est. New Size</p>
+                            <p id="estimatedSize" class="text-sm font-bold text-orange-800">--</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls Panel -->
+                <div class="lg:col-span-2 glass-card rounded-3xl shadow-2xl p-6 order-1 lg:order-2">
+                    <h2 class="text-xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                        <span class="text-2xl">⚙️</span> Resize Options
+                    </h2>
+
+                    <!-- Dimensions -->
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-700 mb-3 flex items-center gap-2">
+                            <span>📐</span> Dimensions (pixels)
+                        </h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-sm text-gray-600 mb-1.5 font-medium">Width</label>
+                                <input type="number" id="widthInput" min="1" max="10000" class="input-field w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:ring-4 focus:ring-indigo-100 focus:border-indigo-500 font-semibold text-lg">
+                            </div>
+                            <div>
+                                <label class="block text-sm text-gray-600 mb-1.5 font-medium">Height</label>
+                                <input type="number" id="heightInput" min="1" max="10000" class="input-field w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:ring-4 focus:ring-indigo-100 focus:border-indigo-500 font-semibold text-lg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lock Aspect Ratio -->
+                    <div class="mb-6 bg-indigo-50 rounded-xl p-4">
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="checkbox" id="lockRatio" checked class="w-6 h-6 text-indigo-600 rounded-lg focus:ring-indigo-500 cursor-pointer">
+                            <span class="text-gray-700 font-semibold flex items-center gap-2">
+                                <span id="lockIcon">🔒</span> Lock Aspect Ratio
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- Preset Ratios -->
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-700 mb-3 flex items-center gap-2">
+                            <span>📏</span> Aspect Ratio Presets
+                        </h3>
+                        <div class="grid grid-cols-3 gap-2">
+                            <button onclick="setRatio(1, 1)" class="ratio-btn px-3 py-2.5 bg-gray-100 hover:bg-indigo-100 text-gray-700 rounded-xl text-sm font-bold">1:1 <span class="text-xs block text-gray-500">Square</span></button>
+                            <button onclick="setRatio(4, 3)" class="ratio-btn px-3 py-2.5 bg-gray-100 hover:bg-indigo-100 text-gray-700 rounded-xl text-sm font-bold">4:3 <span class="text-xs block text-gray-500">Standard</span></button>
+                            <button onclick="setRatio(16, 9)" class="ratio-btn px-3 py-2.5 bg-gray-100 hover:bg-indigo-100 text-gray-700 rounded-xl text-sm font-bold">16:9 <span class="text-xs block text-gray-500">Widescreen</span></button>
+                            <button onclick="setRatio(3, 2)" class="ratio-btn px-3 py-2.5 bg-gray-100 hover:bg-indigo-100 text-gray-700 rounded-xl text-sm font-bold">3:2 <span class="text-xs block text-gray-500">Photo</span></button>
+                            <button onclick="setRatio(9, 16)" class="ratio-btn px-3 py-2.5 bg-gray-100 hover:bg-indigo-100 text-gray-700 rounded-xl text-sm font-bold">9:16 <span class="text-xs block text-gray-500">Portrait</span></button>
+                            <button onclick="setRatio(21, 9)" class="ratio-btn px-3 py-2.5 bg-gray-100 hover:bg-indigo-100 text-gray-700 rounded-xl text-sm font-bold">21:9 <span class="text-xs block text-gray-500">Ultra Wide</span></button>
+                        </div>
+                    </div>
+
+                    <!-- Scale Percentage -->
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-700 mb-3 flex items-center justify-between">
+                            <span class="flex items-center gap-2"><span>📊</span> Scale</span>
+                            <span id="scaleValue" class="text-indigo-600 font-bold text-lg">100%</span>
+                        </h3>
+                        <input type="range" id="scaleSlider" min="10" max="200" value="100" class="w-full h-2 rounded-lg cursor-pointer mb-3">
+                        <div class="grid grid-cols-5 gap-2">
+                            <button onclick="setScale(25)" class="scale-btn px-2 py-2 bg-gray-100 hover:bg-indigo-100 rounded-lg text-xs font-bold">25%</button>
+                            <button onclick="setScale(50)" class="scale-btn px-2 py-2 bg-gray-100 hover:bg-indigo-100 rounded-lg text-xs font-bold">50%</button>
+                            <button onclick="setScale(75)" class="scale-btn px-2 py-2 bg-gray-100 hover:bg-indigo-100 rounded-lg text-xs font-bold">75%</button>
+                            <button onclick="setScale(100)" class="scale-btn px-2 py-2 bg-gray-100 hover:bg-indigo-100 rounded-lg text-xs font-bold">100%</button>
+                            <button onclick="setScale(150)" class="scale-btn px-2 py-2 bg-gray-100 hover:bg-indigo-100 rounded-lg text-xs font-bold">150%</button>
+                        </div>
+                    </div>
+
+                    <!-- Quality -->
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-700 mb-3 flex items-center justify-between">
+                            <span class="flex items-center gap-2"><span>🎨</span> Quality</span>
+                            <span id="qualityValue" class="text-indigo-600 font-bold text-lg">90%</span>
+                        </h3>
+                        <input type="range" id="qualitySlider" min="10" max="100" value="90" class="w-full h-2 rounded-lg cursor-pointer">
+                        <p class="text-xs text-gray-500 mt-2 flex items-center gap-1">
+                            <span>💡</span> Lower quality = smaller file size
+                        </p>
+                    </div>
+
+                    <!-- Output Format -->
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-700 mb-3 flex items-center gap-2">
+                            <span>📄</span> Output Format
+                        </h3>
+                        <div class="grid grid-cols-3 gap-2">
+                            <button onclick="setFormat('jpeg')" class="format-btn active px-3 py-3 rounded-xl text-sm font-bold transition" data-format="jpeg">
+                                JPG
+                                <span class="text-xs block opacity-70">Smaller</span>
+                            </button>
+                            <button onclick="setFormat('png')" class="format-btn bg-gray-100 text-gray-700 px-3 py-3 rounded-xl text-sm font-bold transition" data-format="png">
+                                PNG
+                                <span class="text-xs block opacity-70">Lossless</span>
+                            </button>
+                            <button onclick="setFormat('webp')" class="format-btn bg-gray-100 text-gray-700 px-3 py-3 rounded-xl text-sm font-bold transition" data-format="webp">
+                                WebP
+                                <span class="text-xs block opacity-70">Modern</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="space-y-3">
+                        <button onclick="downloadImage()" class="btn-success w-full text-white font-bold py-4 px-6 rounded-2xl flex items-center justify-center gap-3 text-lg shadow-xl">
+                            <span class="text-2xl">⬇️</span> Download Image
+                        </button>
+                        <button onclick="copyToClipboard()" class="w-full bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold py-3 px-6 rounded-xl transition flex items-center justify-center gap-2">
+                            <span>📋</span> Copy to Clipboard
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="mt-16 fade-in" id="featuresSection">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-3">Why Choose Our Image Resizer?</h2>
+            <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">The fastest, most private way to resize your images online</p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <article class="glass-card rounded-2xl p-8 shadow-xl hover:shadow-2xl transition hover:-translate-y-1">
+                    <div class="text-5xl mb-4">🚀</div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-3">Lightning Fast</h3>
+                    <p class="text-gray-600">Resize images instantly in your browser. No waiting for uploads or downloads from slow servers.</p>
+                </article>
+                <article class="glass-card rounded-2xl p-8 shadow-xl hover:shadow-2xl transition hover:-translate-y-1">
+                    <div class="text-5xl mb-4">🔒</div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-3">100% Private</h3>
+                    <p class="text-gray-600">Your images never leave your device. All processing happens locally in your browser.</p>
+                </article>
+                <article class="glass-card rounded-2xl p-8 shadow-xl hover:shadow-2xl transition hover:-translate-y-1">
+                    <div class="text-5xl mb-4">✨</div>
+                    <h3 class="font-bold text-xl text-gray-800 mb-3">No Login Required</h3>
+                    <p class="text-gray-600">Start editing immediately. No accounts, no signups, no email verification needed.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- How to Use Section -->
+        <section class="mt-16">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">How to Resize Your Image</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4 shadow-lg">1</div>
+                    <h3 class="font-bold text-lg mb-2">Upload Image</h3>
+                    <p class="text-gray-600">Drag & drop or click to select your image file</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4 shadow-lg">2</div>
+                    <h3 class="font-bold text-lg mb-2">Adjust Settings</h3>
+                    <p class="text-gray-600">Set dimensions, ratio, and quality with live preview</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4 shadow-lg">3</div>
+                    <h3 class="font-bold text-lg mb-2">Download</h3>
+                    <p class="text-gray-600">Save your resized image in your preferred format</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white/80 backdrop-blur-md border-t border-gray-200 mt-16 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center text-gray-600">
+            <p class="font-medium">© 2024 Image Resizer Pro. Free online image editing - No login required.</p>
+            <p class="text-sm mt-2 flex items-center justify-center gap-2">
+                <span>🔒</span> Your images are processed locally and never uploaded to any server
+            </p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 bg-gray-900 text-white px-6 py-3 rounded-xl shadow-2xl transform translate-y-20 opacity-0 transition-all duration-300 flex items-center gap-3 z-50">
+        <span id="toastIcon">✅</span>
+        <span id="toastMessage">Action completed</span>
+    </div>
+
+    <!-- Hidden Canvas -->
+    <canvas id="canvas" class="hidden"></canvas>
+
+    <script>
+        // State
+        let originalImage = null;
+        let originalImageData = null;
+        let originalWidth = 0;
+        let originalHeight = 0;
+        let currentWidth = 0;
+        let currentHeight = 0;
+        let aspectRatio = 1;
+        let outputFormat = 'jpeg';
+        let originalFileName = 'image';
+        let originalFileSize = 0;
+        let showingOriginal = false;
+
+        // DOM Elements
+        const dropZone = document.getElementById('dropZone');
+        const fileInput = document.getElementById('fileInput');
+        const uploadSection = document.getElementById('uploadSection');
+        const editorSection = document.getElementById('editorSection');
+        const previewImage = document.getElementById('previewImage');
+        const widthInput = document.getElementById('widthInput');
+        const heightInput = document.getElementById('heightInput');
+        const lockRatio = document.getElementById('lockRatio');
+        const scaleSlider = document.getElementById('scaleSlider');
+        const qualitySlider = document.getElementById('qualitySlider');
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Event Listeners
+        dropZone.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', handleFileSelect);
+
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('dragover');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('dragover');
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+            const file = e.dataTransfer.files[0];
+            if (file && file.type.startsWith('image/')) {
+                loadImage(file);
+            }
+        });
+
+        widthInput.addEventListener('input', () => {
+            currentWidth = parseInt(widthInput.value) || 1;
+            if (lockRatio.checked) {
+                currentHeight = Math.round(currentWidth / aspectRatio);
+                heightInput.value = currentHeight;
+            }
+            updatePreview();
+        });
+
+        heightInput.addEventListener('input', () => {
+            currentHeight = parseInt(heightInput.value) || 1;
+            if (lockRatio.checked) {
+                currentWidth = Math.round(currentHeight * aspectRatio);
+                widthInput.value = currentWidth;
+            }
+            updatePreview();
+        });
+
+        lockRatio.addEventListener('change', () => {
+            document.getElementById('lockIcon').textContent = lockRatio.checked ? '🔒' : '🔓';
+            if (lockRatio.checked) {
+                aspectRatio = currentWidth / currentHeight;
+            }
+        });
+
+        scaleSlider.addEventListener('input', () => {
+            const scale = scaleSlider.value / 100;
+            document.getElementById('scaleValue').textContent = scaleSlider.value + '%';
+            currentWidth = Math.round(originalWidth * scale);
+            currentHeight = Math.round(originalHeight * scale);
+            widthInput.value = currentWidth;
+            heightInput.value = currentHeight;
+            updatePreview();
+        });
+
+        qualitySlider.addEventListener('input', () => {
+            document.getElementById('qualityValue').textContent = qualitySlider.value + '%';
+            updatePreview();
+        });
+
+        // Functions
+        function handleFileSelect(e) {
+            const file = e.target.files[0];
+            if (file) {
+                loadImage(file);
+            }
+        }
+
+        function loadImage(file) {
+            originalFileName = file.name.replace(/\.[^/.]+$/, '');
+            originalFileSize = file.size;
+            
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                originalImageData = e.target.result;
+                const img = new Image();
+                img.onload = () => {
+                    originalImage = img;
+                    originalWidth = img.width;
+                    originalHeight = img.height;
+                    currentWidth = img.width;
+                    currentHeight = img.height;
+                    aspectRatio = img.width / img.height;
+
+                    widthInput.value = img.width;
+                    heightInput.value = img.height;
+                    
+                    document.getElementById('originalSize').textContent = `${img.width} × ${img.height}`;
+                    document.getElementById('fileSize').textContent = formatBytes(file.size);
+                    
+                    // Reset scale slider
+                    scaleSlider.value = 100;
+                    document.getElementById('scaleValue').textContent = '100%';
+                    
+                    updatePreview();
+                    showEditor();
+                    showToast('✅', 'Image loaded successfully!');
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function showEditor() {
+            uploadSection.classList.add('hidden');
+            editorSection.classList.remove('hidden');
+            document.getElementById('featuresSection').classList.add('hidden');
+        }
+
+        function updatePreview() {
+            if (!originalImage) return;
+
+            canvas.width = currentWidth;
+            canvas.height = currentHeight;
+            
+            ctx.imageSmoothingEnabled = true;
+            ctx.imageSmoothingQuality = 'high';
+            ctx.drawImage(originalImage, 0, 0, currentWidth, currentHeight);
+
+            const quality = qualitySlider.value / 100;
+            const mimeType = `image/${outputFormat}`;
+            const dataUrl = canvas.toDataURL(mimeType, quality);
+            
+            if (!showingOriginal) {
+                previewImage.src = dataUrl;
+            }
+            
+            // Update displays
+            document.getElementById('newDimensions').textContent = `${currentWidth} × ${currentHeight}`;
+            document.getElementById('overlayDimensions').textContent = `${currentWidth} × ${currentHeight} px`;
+            
+            // Estimate new file size
+            const base64Length = dataUrl.length - `data:${mimeType};base64,`.length;
+            const estimatedBytes = Math.round(base64Length * 0.75);
+            document.getElementById('estimatedSize').textContent = formatBytes(estimatedBytes);
+        }
+
+        function togglePreview(mode) {
+            if (mode === 'original') {
+                showingOriginal = true;
+                previewImage.src = originalImageData;
+                document.getElementById('overlayDimensions').textContent = `${originalWidth} × ${originalHeight} px (Original)`;
+                document.getElementById('showOriginalBtn').classList.add('bg-indigo-100', 'text-indigo-700');
+                document.getElementById('showOriginalBtn').classList.remove('bg-gray-100');
+                document.getElementById('showResizedBtn').classList.remove('bg-indigo-100', 'text-indigo-700');
+                document.getElementById('showResizedBtn').classList.add('bg-gray-100');
+            } else {
+                showingOriginal = false;
+                updatePreview();
+                document.getElementById('showResizedBtn').classList.add('bg-indigo-100', 'text-indigo-700');
+                document.getElementById('showResizedBtn').classList.remove('bg-gray-100');
+                document.getElementById('showOriginalBtn').classList.remove('bg-indigo-100', 'text-indigo-700');
+                document.getElementById('showOriginalBtn').classList.add('bg-gray-100');
+            }
+        }
+
+        function setRatio(w, h) {
+            const newRatio = w / h;
+            currentHeight = Math.round(currentWidth / newRatio);
+            heightInput.value = currentHeight;
+            aspectRatio = newRatio;
+            
+            // Remove active state from all
+            document.querySelectorAll('.ratio-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.closest('.ratio-btn').classList.add('active');
+            
+            updatePreview();
+        }
+
+        function setScale(percent) {
+            scaleSlider.value = percent;
+            document.getElementById('scaleValue').textContent = percent + '%';
+            const scale = percent / 100;
+            currentWidth = Math.round(originalWidth * scale);
+            currentHeight = Math.round(originalHeight * scale);
+            widthInput.value = currentWidth;
+            heightInput.value = currentHeight;
+            aspectRatio = currentWidth / currentHeight;
+            updatePreview();
+        }
+
+        function setFormat(format) {
+            outputFormat = format;
+            document.querySelectorAll('.format-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.add('bg-gray-100', 'text-gray-700');
+            });
+            const activeBtn = document.querySelector(`[data-format="${format}"]`);
+            activeBtn.classList.add('active');
+            activeBtn.classList.remove('bg-gray-100', 'text-gray-700');
+            updatePreview();
+        }
+
+        function downloadImage() {
+            if (!originalImage) return;
+
+            canvas.width = currentWidth;
+            canvas.height = currentHeight;
+            
+            ctx.imageSmoothingEnabled = true;
+            ctx.imageSmoothingQuality = 'high';
+            ctx.drawImage(originalImage, 0, 0, currentWidth, currentHeight);
+
+            const quality = qualitySlider.value / 100;
+            const mimeType = `image/${outputFormat}`;
+            const extension = outputFormat === 'jpeg' ? 'jpg' : outputFormat;
+            
+            const link = document.createElement('a');
+            link.download = `${originalFileName}_${currentWidth}x${currentHeight}.${extension}`;
+            link.href = canvas.toDataURL(mimeType, quality);
+            link.click();
+            
+            showToast('✅', 'Image downloaded successfully!');
+        }
+
+        async function copyToClipboard() {
+            if (!originalImage) return;
+
+            canvas.width = currentWidth;
+            canvas.height = currentHeight;
+            
+            ctx.imageSmoothingEnabled = true;
+            ctx.imageSmoothingQuality = 'high';
+            ctx.drawImage(originalImage, 0, 0, currentWidth, currentHeight);
+
+            try {
+                canvas.toBlob(async (blob) => {
+                    const item = new ClipboardItem({ 'image/png': blob });
+                    await navigator.clipboard.write([item]);
+                    showToast('📋', 'Image copied to clipboard!');
+                });
+            } catch (err) {
+                showToast('❌', 'Failed to copy to clipboard');
+            }
+        }
+
+        function resetEditor() {
+            originalImage = null;
+            originalImageData = null;
+            fileInput.value = '';
+            scaleSlider.value = 100;
+            document.getElementById('scaleValue').textContent = '100%';
+            qualitySlider.value = 90;
+            document.getElementById('qualityValue').textContent = '90%';
+            setFormat('jpeg');
+            showingOriginal = false;
+            
+            // Reset ratio buttons
+            document.querySelectorAll('.ratio-btn').forEach(btn => btn.classList.remove('active'));
+            
+            editorSection.classList.add('hidden');
+            uploadSection.classList.remove('hidden');
+            document.getElementById('featuresSection').classList.remove('hidden');
+        }
+
+        function formatBytes(bytes) {
+            if (bytes === 0) return '0 B';
+            const k = 1024;
+            const sizes = ['B', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(1)) + ' ' + sizes[i];
+        }
+
+        function showToast(icon, message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastIcon').textContent = icon;
+            document.getElementById('toastMessage').textContent = message;
+            
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+            
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+                toast.classList.remove('translate-y-0', 'opacity-100');
+            }, 3000);
+        }
+    </script>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Free Online Image Resizer",
+        "description": "Resize images, change dimensions, adjust resolution and aspect ratio online. Free tool with no login required.",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Resize images",
+            "Change aspect ratio",
+            "Adjust image quality",
+            "Convert image formats",
+            "No login required",
+            "Free to use",
+            "Live preview",
+            "Local processing"
+        ]
+    }
+    </script>
+</body>
+</html>
